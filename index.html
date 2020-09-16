@@ -3,34 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Article preview component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
-
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-  
+    <div id="main">
+        <div class="component">
+            <img src="images/drawers.jpg" alt="drawers" class="image"/>
+            <div class="component_component">
+                <p class="component_heading">Shift the overall look and feel by<br> adding these wonderful
+                    touches to<br> furniture in your home
+                </p>
+                <p class="component_text">
+                    Ever been in a room and felt like something was missing?<br> Perhaps
+                    it felt slightly bare and uninviting. I’ve got some<br> simple tips
+                    to help you make any room feel complete.
+                </p>
+                <div class="component_name_share">
+                    <div class="user_info">
+                        <img src="images/avatar-michelle.jpg" alt="michelle avatar" class="avatar">
+                        <div class="date_name"><p class="name">Michelle Appleton<br> <span class="date">28 Jun 2020</span></p></div>
+                    </div>
+                    <div class="share_button" id="share_button">
+                        <i class="fas fa-share"></i>
+                    </div>
+                </div>
+                <div class="share_link" id="share_link">
+                    <div class="inner_link">
+                        <div class="link_components">
+                            <p class="share">SHARE</p>
+                            <img src="images/icon-facebook.svg" alt="facebook icon">
+                            <img src="images/icon-twitter.svg" alt="facebook icon">
+                            <img src="images/icon-pinterest.svg" alt="facebook icon">
+                        </div>
+                    </div>
+                    <div class="arrow"></div>
+                </div>
+            </div>
+        </div>
+    </div>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/GlobalGraphic/article-preview" target="_blank">Branislav Buna</a>.
   </div>
+    <script src="https://kit.fontawesome.com/bf71c6be93.js" crossorigin="anonymous"></script>
+    <script>
+        let share_button = document.getElementById('share_button');
+        let share_link = document.getElementById('share_link')
+        share_button.addEventListener('click', () => {
+            share_link.style.display = 'inline-block';
+        });
+
+        share_link.addEventListener('mouseleave', () => {
+            share_link.style.display = 'none';
+        });
+    </script>
 </body>
 </html>

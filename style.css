@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div.component{
+    display: flex;
+    flex-direction: row;
+    width: 55rem;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.image {
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.component_component {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.component_heading {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.component_text {
+    color: hsl(212, 23%, 69%);
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.component_name_share {
+    width: 100%;
+    display: flex;
+}
+
+.user_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+img.avatar {
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.date_name {
+    margin-left: 3%;
+}
+
+p.name {
+    font-weight: 50;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+span.date {
+    color: hsl(212, 23%, 69%);
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.share_button {
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    cursor: pointer;
+}
+
+.fa-share {
+    color: hsl(217, 19%, 35%);
+}
+
+.share_link {
+    display: none;
+    width: 250px;
+    height: 70px;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 15px;
+    position: absolute;
+    right: 23%;
+}
+
+.arrow {
+    width: 30px;
+    height: 40px;
+    clip-path: polygon(49% 55%, 17% 0, 79% 0);
+    background-color: hsl(217, 19%, 35%);
+    position: absolute;
+    bottom: -40px;
+    left: 45%;
+}
+
+.inner_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link_components {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 10%;
+    width: 100%;
+}
+
+.share {
+    color: hsl(212, 23%, 69%);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 10px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
